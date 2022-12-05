@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <h1>Wonderlijke willekeurige objecten uit de Collectie van de Gentenaar</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{form}}
+            <button type="submit">Zoeken!</button>
+        </form>
+        <a>Typ een zoekterm en krijg als resultaat een willekeurig object met dat woord in de titel!</a>
+        <br>
+        <a>Laat je verrassen door de rijkdom van het Gentse erfgoed!</a>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'templates/styles.css' %}">
+</head>
+<body>
+    <h1>Wonderlijke willekeurige objecten uit de Collectie van de Gentenaar</h1>
+    <a href="{{webplatform|safe }}" target="_blank"><img src="{{ afbeelding1|safe }}" style=  'width: 70%; margin-left: 1cm; margin-top: 1cm; margin-bottom: 1cm; margin-right: 1cm'> </a>
+    <a href="{{webplatform|safe }}">{{ titel|safe }}</a>
+    <br>
+    <br>
+    <a href="{{ request.get_full_path }}">Liever een andere zoekterm?</a>
+    <br>
+    <b>zoekterm: {{ zoekterm|safe }}</b>
+</body>
+</html>
